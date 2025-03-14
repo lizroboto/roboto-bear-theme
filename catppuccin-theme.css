@@ -3,26 +3,19 @@
 @media (prefers-color-scheme: light) {
   :root {
     width: 600px;
-    margin: 5%auto;
+    margin: auto;
     background: #eff1f5;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 16px;
     line-height: 1.8;
-    max-width: 73%
+    max-width: 73%;
+    color: #4c4f69;
 	}
+	
   code {
     background: #fffaf3;
     font-family: monospace;
     border-radius: 3px;
-  }
-  a {
-    border-bottom: 1px solid #ea76cb;
-    color: #1e66f5;
-    text-decoration: none;
-	}
-  
-  a:hover {
-      border-bottom: 0;
   }
   
   b,
@@ -34,22 +27,37 @@
 
   h1{   
     font-family: 'Roboto Mono', monospace;
-    font-size: 2em;
+    font-size:1.4em;
     color:  #04a5e5;
   }
+  
   h2,
   h3,
   h4,
   h5,
   h6 {
-      color: #ea76cb;
+    color: #ea76cb;
   }
+   
+   a:link {
+    color: #1e66f5;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    text-decoration: #1e66f5 wavy underline;
+    }
+  
+  a:visited {
+    color: #8839ef;
+  }
+  
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    width: 600px;
-    margin: 5%auto;
+    width: 650px;
+    margin: auto;
     background: #1e1e2e;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 16px;
@@ -57,45 +65,52 @@
     max-width: 73%;
     color: #cdd6f4;
    }
+   
   code {
     background: #313244;
     font-family: monospace;
     border-radius: 3px;
   }
-  h1{   
-    font-family: 'Roboto Mono', monospace;
-    font-size: 2em;
-    color: #74c7ec;
-  }
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: #b4befe;
-  }
-
-  a {
-      border-bottom: 1px solid #f5c2e7;
-      color: #89b4fa;
-      text-decoration: none;
-  }
-  
-  a:hover {
-      border-bottom: 0;
-  }
   
   b,
   body,
   strong {
-      font-family: 'Roboto Mono', monospace;
-      color: #cdd6f4;
+    font-family: 'Roboto Mono', monospace;
+    color: #cdd6f4;
   }
+  
+  h1{   
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.4em;
+    color: #ea76cb;
+  }
+  h2, 
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #89dceb;
+  }
+
+  a:link {
+    color: #89b4fa;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    text-decoration: #cdd6f4 wavy underline;
+  }
+  
+  a:visited {
+    color: #cba6f7;
+  }
+  
 }
 
 header {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 3px dotted silver;
 }
 
@@ -158,10 +173,13 @@ footer span:last-child{
     display:none;
 }
 
+.title {
+    font-size: 1.4em;
+}
+
 .title:hover {
     text-decoration: none;
 }
-
 
 .inline {
     width: auto !important;
@@ -175,12 +193,6 @@ ul.blog-posts {
 time {
    display:none;
 }
-
-
-ul.blog-posts li a:visited {
-    color: var(--visited-color);
-}
-
 
 table {
     border-spacing: 0;
@@ -196,6 +208,18 @@ td {
 #searchInput{
     width: 280px;
     height: 30px;
+}
+
+#statuscafe {
+    padding: 1em;
+    border: 0.5px solid;
+}
+#statuscafe-username {
+    font-size: 0.8em;
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 0;
 }
 
 /* Responsive YouTube embed */
